@@ -43,11 +43,11 @@ class CacheManager: NSObject, NSCoding {
 
 	//decode method for our CacheManager
 	required init(coder aDecoder: NSCoder) {
-		super.init()
 		self.objectMaxId = aDecoder.decodeIntegerForKey("objectMaxId")
 		if let dico:[String:String] = aDecoder.decodeObjectForKey("filenameFromUrlDic") as? [String:String] {
 			self.filenameFromIdDico = dico
 		}
+		super.init()
 	}
 
 	//saving method for our CacheManager
