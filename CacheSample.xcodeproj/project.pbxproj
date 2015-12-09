@@ -12,19 +12,8 @@
 		174F8F121A77C4150069E1B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174F8F101A77C4150069E1B4 /* Main.storyboard */; };
 		174F8F141A77C4150069E1B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174F8F131A77C4150069E1B4 /* Images.xcassets */; };
 		174F8F171A77C4150069E1B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174F8F151A77C4150069E1B4 /* LaunchScreen.xib */; };
-		174F8F231A77C4150069E1B4 /* CacheSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F8F221A77C4150069E1B4 /* CacheSampleTests.swift */; };
 		174F8F2D1A77C4790069E1B4 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F8F2C1A77C4790069E1B4 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		174F8F1D1A77C4150069E1B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 174F8EFF1A77C4150069E1B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 174F8F061A77C4150069E1B4;
-			remoteInfo = CacheSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		174F8F071A77C4150069E1B4 /* CacheSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CacheSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,7 +23,6 @@
 		174F8F111A77C4150069E1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		174F8F131A77C4150069E1B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		174F8F161A77C4150069E1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		174F8F1C1A77C4150069E1B4 /* CacheSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CacheSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		174F8F211A77C4150069E1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		174F8F221A77C4150069E1B4 /* CacheSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheSampleTests.swift; sourceTree = "<group>"; };
 		174F8F2C1A77C4790069E1B4 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
@@ -42,13 +30,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		174F8F041A77C4150069E1B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		174F8F191A77C4150069E1B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				174F8F071A77C4150069E1B4 /* CacheSample.app */,
-				174F8F1C1A77C4150069E1B4 /* CacheSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,39 +115,19 @@
 			productReference = 174F8F071A77C4150069E1B4 /* CacheSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		174F8F1B1A77C4150069E1B4 /* CacheSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 174F8F291A77C4150069E1B4 /* Build configuration list for PBXNativeTarget "CacheSampleTests" */;
-			buildPhases = (
-				174F8F181A77C4150069E1B4 /* Sources */,
-				174F8F191A77C4150069E1B4 /* Frameworks */,
-				174F8F1A1A77C4150069E1B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				174F8F1E1A77C4150069E1B4 /* PBXTargetDependency */,
-			);
-			name = CacheSampleTests;
-			productName = CacheSampleTests;
-			productReference = 174F8F1C1A77C4150069E1B4 /* CacheSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		174F8EFF1A77C4150069E1B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = 3IE;
 				TargetAttributes = {
 					174F8F061A77C4150069E1B4 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					174F8F1B1A77C4150069E1B4 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 174F8F061A77C4150069E1B4;
 					};
 				};
 			};
@@ -185,7 +145,6 @@
 			projectRoot = "";
 			targets = (
 				174F8F061A77C4150069E1B4 /* CacheSample */,
-				174F8F1B1A77C4150069E1B4 /* CacheSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +157,6 @@
 				174F8F121A77C4150069E1B4 /* Main.storyboard in Resources */,
 				174F8F171A77C4150069E1B4 /* LaunchScreen.xib in Resources */,
 				174F8F141A77C4150069E1B4 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		174F8F1A1A77C4150069E1B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,23 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		174F8F181A77C4150069E1B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				174F8F231A77C4150069E1B4 /* CacheSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		174F8F1E1A77C4150069E1B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 174F8F061A77C4150069E1B4 /* CacheSample */;
-			targetProxy = 174F8F1D1A77C4150069E1B4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		174F8F101A77C4150069E1B4 /* Main.storyboard */ = {
@@ -279,6 +215,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -342,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CacheSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.3ie.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,41 +290,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CacheSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.3ie.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		174F8F2A1A77C4150069E1B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CacheSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CacheSample.app/CacheSample";
-			};
-			name = Debug;
-		};
-		174F8F2B1A77C4150069E1B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CacheSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CacheSample.app/CacheSample";
 			};
 			name = Release;
 		};
@@ -409,14 +314,7 @@
 				174F8F281A77C4150069E1B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		174F8F291A77C4150069E1B4 /* Build configuration list for PBXNativeTarget "CacheSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				174F8F2A1A77C4150069E1B4 /* Debug */,
-				174F8F2B1A77C4150069E1B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

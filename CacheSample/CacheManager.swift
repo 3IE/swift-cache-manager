@@ -42,7 +42,7 @@ class CacheManager: NSObject, NSCoding {
 	}
 
 	//decode method for our CacheManager
-	required init(coder aDecoder: NSCoder) {
+	required init?(coder aDecoder: NSCoder) {
 		self.objectMaxId = aDecoder.decodeIntegerForKey("objectMaxId")
 		if let dico:[String:String] = aDecoder.decodeObjectForKey("filenameFromUrlDic") as? [String:String] {
 			self.filenameFromIdDico = dico
@@ -59,7 +59,7 @@ class CacheManager: NSObject, NSCoding {
 	class func pathInDocDirectory(filename: String)->String? {
 		let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
 		if paths.count > 0 {
-			if let path: String = paths[0] as? String {
+			if let path: String = paths[0] as String {
 				return path + "/" + filename
 			}
 		}
