@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		let cacheMgr = CacheManager.sharedInstance
 		var val: AnyObject? = cacheMgr.loadObject("myobj")
-		println("before saving the object, value = \(val)")
+		print("before saving the object, value = \(val)")
 		cacheMgr.saveObject([2:"toto"], identifier: "myobj");
 		val = cacheMgr.loadObject("myobj")
-		println("after saving the object, value = \(val)")
+		print("after saving the object, value = \(val)")
 		return true
 	}
 
